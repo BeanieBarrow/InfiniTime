@@ -9,6 +9,7 @@ This is a personal fork, likely not meeting any standards of polish, only really
 ### Not stolen
   * Increase notif vibrate from 35ms to 300ms
   * Increase timer vibrate from 35ms to 1500ms
+  * Change "volts" to "V" in the BatteryInfo app
 
 ### Stolen from [mashuptwice](https://github.com/mashuptwice/InfiniTime) (deleted account and repo)
   * Increase alarm timeout from 60s to 3m
