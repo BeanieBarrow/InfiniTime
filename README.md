@@ -24,6 +24,17 @@ This is a personal fork, likely not meeting any standards of polish, only really
 ### Stolen from upstream PRs
   * Tweak notifs for more text (InfiniTimeOrg#1422)
 
+## How I built the project
+
+1. Cloned the repo with submodule recursion `git clone --recurse-submodules -j8 https://github.com/BeanieBarrow/InfiniTime`
+2. Downloaded the [gcc-arm-none-eabi-10.3-2021.10 toolchain](https://developer.arm.com/downloads/-/gnu-rm/10-3-2021-10)
+3. Downloaded the [nRF5_SDK_15.3.0_59ac345 toolchain](https://www.nordicsemi.com/Products/Development-software/nRF5-SDK/Download#infotabs)
+4. Extracted both to my `/opt` directory.
+5. Ran the commands `export ARM_NONE_EABI_TOOLCHAIN_PATH=/opt/gcc-arm-none-eabi-10.3-2021.10` and `export NRF5_SDK_PATH=/opt/nRF5_SDK_15.3.0_59ac345`.
+6. Ran the command `cmake -DARM_NONE_EABI_TOOLCHAIN_PATH=/opt/gcc-arm-none-eabi-10.3-2021.10/ -DNRF5_SDK_PATH=/opt/nRF5_SDK_15.3.0_59ac345/ -DBUILD_DFU=1` in the root directory of the repo
+7. Ran the command `make -j pinetime-mcuboot-app`
+8. Transferred the firmware (`pinetime-mcuboot-app-dfu-1.13.0.zip`) to my PineTime using [WatchMate](https://github.com/azymohliad/watchmate).
+
 ---
 
 Everything below is the original README, for convenience.
@@ -61,7 +72,6 @@ Everything below is the original README, for convenience.
 
 ### Contributing
 
-  - [How to contribute?](doc/contribute.md)
   - [Coding conventions](doc/coding-convention.md)
 
 ### Build, flash and debug
