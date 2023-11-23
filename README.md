@@ -1,8 +1,8 @@
-# [InfiniTime25](https://github.com/Commenter25/InfiniTime25)
+# [BeanieBarrow's InfiniTime firmware](https://github.com/BeanieBarrow/InfiniTime)
 
-Forked, probably clunky firmware for the [PineTime smartwatch](https://www.pine64.org/pinetime/), with changes I mostly bodged in from other forks, and from PRs that haven't made it to main.
+Forked from [Commenter25's InfiniTime25](https://github.com/Commenter25/InfiniTime25)
 
-This is a personal fork, likely not meeting any standards of polish, only really focused on what I want, and will be updated whenever I feel like reflashing my watch. I don't expect anyone else to use this. I will bring any clean and useful changes upstream, or at least give it a distinct home. Though since you're here, if you happen to like my specific combination of things, feel free to use it or fork it yourself!
+My edited firmware for the [PineTime smartwatch](https://www.pine64.org/pinetime/), with changes I mostly bodged in from other forks, and from PRs that haven't made it to main.
 
 ## Changes
 
@@ -24,6 +24,7 @@ This is a personal fork, likely not meeting any standards of polish, only really
 
 ### Stolen from upstream PRs
   * Tweak notifs for more text (InfiniTimeOrg#1422)
+  * Simple calculator (IntiniTimeOrg#1483)
 
 ## How I built the project
 
