@@ -24,7 +24,7 @@ My edited firmware for the [PineTime smartwatch](https://www.pine64.org/pinetime
 
 ### Stolen from upstream PRs
   * Tweak notifs for more text (InfiniTimeOrg#1422)
-  * Simple calculator (IntiniTimeOrg#1483)
+  * Simple calculator (InfiniTimeOrg#1483)
 
 ## How I built the project
 
