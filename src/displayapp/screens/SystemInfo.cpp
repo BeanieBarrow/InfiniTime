@@ -179,6 +179,7 @@ std::unique_ptr<Screen> SystemInfo::CreateScreen2() {
 
 extern int mallocFailedCount;
 extern int stackOverflowCount;
+
 std::unique_ptr<Screen> SystemInfo::CreateScreen3() {
   lv_mem_monitor_t mon;
   lv_mem_monitor(&mon);
@@ -281,8 +282,8 @@ std::unique_ptr<Screen> SystemInfo::CreateScreen5() {
                            "Public License v3\n"
                            "#808080 Source code#\n"
                            "#FFFF00 https://github.com/#\n"
-                           "#FFFF00 Commenter25/#\n"
-                           "#FFFF00 InfiniTime25#");
+                           "#FFFF00 BeanieBarrow/#\n"
+                           "#FFFF00 InfiniTime#");
   lv_label_set_align(label, LV_LABEL_ALIGN_CENTER);
   lv_obj_align(label, lv_scr_act(), LV_ALIGN_CENTER, 0, 0);
   return std::make_unique<Screens::Label>(4, 5, label);
